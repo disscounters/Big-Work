@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 10%  55%  3%;
+    grid-template-areas: "header "
+    " nav "
+    "body "
+    "footer ";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/157616470776.jpg");
+}
+.laboratoryone{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.header {
+    font-family: Gadugi;
+    font-style: italic;
+    padding: 35px 30px  ;
+    grid-area: header;
+}
+
+.header-nav{
+    grid-area: nav;
+    position: relative;
+
+
+}
+.header-nav>ul{
+    list-style: none;
+    display: flex;
+}
+.employment-guidelines a{
+    text-decoration: none;
+    color: black;
+}
+
+.major,.laboratory,.log,.teachers,.employment-guidelines {
+    position: relative;
+    display: block;
+    border-radius: 3px;
+    opacity: 0.8;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 12px;
+    margin: 2px;
+}
+
+.major:hover,.laboratory:hover,.log:hover,.teachers:hover,.employment-guidelines:hover{
+    opacity: 1;
+    cursor: move;
+    border-radius: 6px;
+    background-color: lightskyblue;
+}
+
+
+.dropdown-major,.dropdown-laboratory,.dropdown-teachers{
+    display: none;
+    background-color: aliceblue;
+    position: absolute;
+    top:45px;
+    right: 4px;
+   border-radius: 3px;
+
+}
+.dropdown-major a,.dropdown-laboratory a,.dropdown-teachers a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.dropdown-major a:hover,.dropdown-laboratory a:hover,.dropdown-teachers a:hover{
+     background-color: aqua;
+}
+
+.log{
+    margin-left: auto;
+}
+
+.log a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.new,.notice{
+    background-color: red;
+}
+
+.body{
+    display: flex;
+
+}
+
+.body>.blank{
+    flex-basis: 30%;
+}
+
+.body>.notice,.body>.new{
+    flex-basis: 35%;
+}
+
+.footer{
+
+    background-color: beige;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align:center;
+}
